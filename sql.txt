@@ -1,0 +1,12 @@
+CREATE TABLE torneio_results (
+    match_number INT PRIMARY KEY,
+    team1 VARCHAR(50),
+    team2 VARCHAR(50),
+    score_team1 INT,
+    score_team2 INT,
+    faults_team1 INT,
+    faults_team2 INT,
+    players_team1 TEXT,
+    players_team2 TEXT,
+    bench_players TEXT
+);
