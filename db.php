@@ -1,9 +1,9 @@
 <?php
 
 $servername = "localhost";
-$username = "projetoDAC";
-$password = "torneio123";
-$dbname = "torneio_db";
+$username = "root";
+$password = "";
+$dbname = "";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
