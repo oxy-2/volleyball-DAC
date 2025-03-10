@@ -1,7 +1,6 @@
 <?php
 include 'db.php';
 
-// Fetch all match data from DB
 $sql = "SELECT * FROM torneio_results ORDER BY match_number ASC";
 $result = $conn->query($sql);
 ?>
@@ -14,7 +13,7 @@ $result = $conn->query($sql);
     <title>Torneio de Voleibol</title>
     <link rel="stylesheet" href="styles.css">
     <script>
-        // Expand/collapse logic
+        
         function toggleDetails(matchNumber) {
             const details = document.getElementById(`details-${matchNumber}`);
             details.classList.toggle('expanded');
